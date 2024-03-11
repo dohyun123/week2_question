@@ -2,8 +2,8 @@ class PriorityQueue:
   def __init__(self):
     self.heap = []
 
-  def push(self, item, priority):
-    entry = (priority, item)
+  def push(self, item):
+    entry = (item)
     self.heap.append(entry)
     self._sift_up(len(self.heap) - 1)
 
